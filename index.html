@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cómo estas hoy?</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <!-- The buttons to control the stream -->
+    <div class="button-group">
+        <button id="btn-capture" type="button" class="button">Tomar Foto</button>
+    </div>
+
+    <!-- Video Element & Canvas -->
+    <div class="play-area">
+        <div class="play-area-sub">
+            <h3>Camara</h3>
+            <video id="stream" width="320" height="240"></video>
+        </div>
+        <div class="play-area-sub">
+            <h3>Foto</h3>
+            <canvas id="capture" width="320" height="240"></canvas>
+            <div id="snapshot"></div>
+        </div>
+    </div>
+
+    <div class="results">
+        <h3>Tus Emociones</h3>
+        <label id="emocion"></label>
+        <h3>Tu Edad</h3>
+        <label id="edad"></label>
+        <h3>Eres</h3>
+        <label id="genero"></label>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="facepp.js"></script>
+    <script src="code.js"></script>
+
+</body>
+
+</html>
